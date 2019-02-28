@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<<<<<<< HEAD
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551351327717_0" label="Java Main Sources" name="Java Main Sources">
-=======
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551275651295_0" label="Java Main Sources" name="Java Main Sources">
->>>>>>> LRU/master
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551352760550_0" label="Java Main Sources" name="Java Main Sources">
 <item elementID="=LRUCashe/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=LRUCashe/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=LRUCashe/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=LRUCashe/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
-<<<<<<< HEAD
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551351327732_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551351329105_2" label="ウィンドウ・ワーキング・セット" name="Aggregate for window 1551351329105"/>
-=======
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551275651308_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551275652064_2" label="Window Working Set" name="Aggregate for window 1551275652064"/>
->>>>>>> LRU/master
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551352760565_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551352761599_2" label="ウィンドウ・ワーキング・セット" name="Aggregate for window 1551352761599"/>
 </workingSetManager>
