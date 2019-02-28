@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=C\:\\Users\\si7ki\\Desktop\\EclipseWorkSpase\\LRUCashe\\LRUCashe\\.git;
 GitRepositoriesView.GitDirectories.relative=LRUCashe\\.git;
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\si7ki\\Desktop\\EclipseWorkSpase\\LRUCashe\\.git;C\:\\Users\\si7ki\\Desktop\\TestWorkSpase\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\si7ki\\Desktop\\TestWorkSpase\\.git;
+>>>>>>> LRU/master
 eclipse.preferences.version=1

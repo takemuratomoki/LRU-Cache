@@ -1,4 +1,5 @@
 INDEX VERSION 1.131+C:\Users\si7ki\Desktop\EclipseWorkSpase\LRUCashe\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 73860848.index
 2624179177.index
 1190068350.index
@@ -28,3 +29,6 @@ INDEX VERSION 1.131+C:\Users\si7ki\Desktop\EclipseWorkSpase\LRUCashe\.metadata\.
 1274545716.index
 1938798840.index
 1044230057.index
+=======
+3201695802.index
+>>>>>>> LRU/master
