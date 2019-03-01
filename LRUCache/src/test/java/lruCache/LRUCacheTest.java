@@ -9,6 +9,7 @@ public class LRUCacheTest {
 	//テスト用宣言
 	LRUCacheClass lru = new LRUCacheClass();
 	
+	
 	@Test
 	public void _0番目の要素に格納するput関数テスト(){
 		try {
@@ -43,5 +44,19 @@ public class LRUCacheTest {
 	public void _1つだけ要素を格納した時のdata配列のnullチェック() {
 		lru.put("hoge1", "hogehoge1");
 		assertThat(lru.testCNNForData(),is(1));
+	}
+	
+	@Test
+	public void _2つ要素を追加した時のkey配列のnullチェック() {
+		lru.put("hoge1", "hogehoge1");
+		lru.put("hoge2", "hogehoge2");
+		assertThat(lru.testCNNForKey(),is(2));
+	}
+	
+	@Test
+	public void _2つ要素を追加した時のdata配列のnullチェック() {
+		lru.put("hoge1", "hogehoge1");
+		lru.put("hoge2", "hogehoge2");
+		assertThat(lru.testCNNForData(),is(2));
 	}
 }
