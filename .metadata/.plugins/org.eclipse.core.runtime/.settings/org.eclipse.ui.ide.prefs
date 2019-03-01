@@ -1,9 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=LRU/master
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
-<<<<<<< HEAD
-platformState=1551351311653
-=======
-platformState=1551102759999
->>>>>>> LRU/master
+platformState=1551352741683
 quickStart=false
 tipsAndTricks=true
