@@ -25,8 +25,9 @@
  * [x] 要素数が5の配列2つを持つクラスの実装　型はstring
  * 
  * [ ] put関数でキー値とデータを要素の入っていない配列の要素に格納
- * - [ ] put
+ * - [ ] 0番目の要素に引数を格納する
  * [ ] get関数で指定されたキー値と共に格納されたデータをコンソール上に表示
+ *  - [ ] 文字列1を返すget関数
  *
  * [ ] データが入っていない要素の検出関数を実装
  * - [ ] 整数1を返す
@@ -48,7 +49,8 @@ public class LRUCacheClass {
 	public void put(String keyString,String dataString) {
 		
 		//test
-		
+		key[0]=keyString;
+		data[0]=dataString;
 	}
 	
 	public String get(String keyString) {
