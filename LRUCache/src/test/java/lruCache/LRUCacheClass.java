@@ -49,9 +49,8 @@ public class LRUCacheClass {
 	
 	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
-		//test
-		key[0]=keyString;
-		data[0]=dataString;
+		key[checkNullNum(key)]=keyString;
+		data[checkNullNum(data)]=dataString;
 	}
 	
 	//　指定されたキー値に対応したデータを返す関数
