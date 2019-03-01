@@ -23,8 +23,4 @@ public class LRUCacheTest {
 		assertThat(lru.get("hoge1"),is("1"));
 	}
 	
-	@Test
-	public void ®”1‚ğ•Ô‚·checkNullNumŠÖ”ƒeƒXƒg() {
-		assertThat(lru.checkNullNum(null),is(1));
-	}
 }
