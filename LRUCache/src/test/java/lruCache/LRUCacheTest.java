@@ -22,4 +22,9 @@ public class LRUCacheTest {
 	public void 文字列1を返すget関数テスト() {
 		assertThat(lru.get("hoge1"),is("1"));
 	}
+	
+	@Test
+	public void 整数1を返すcheckNullNum関数テスト() {
+		assertThat(lru.checkNullNum(null),is(1));
+	}
 }
