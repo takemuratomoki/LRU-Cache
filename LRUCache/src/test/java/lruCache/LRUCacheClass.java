@@ -30,7 +30,7 @@
  *  - [x] 文字列1を返すget関数
  *
  * [ ] データが入っていない要素の検出関数を実装
- * - [ ] 整数1を返す
+ * - [x] 整数1を返す
  * - [ ] nullの一致をしたn番目の要素を検出し、整数nを返す
  * 
  *　[ ] put→格納したキー値とデータが配列の最後の要素だった時一番初めの要素(hoge[0]の要素)を消し、すべての要素に入っているデータを[n-1]番目に移す
@@ -46,7 +46,7 @@ public class LRUCacheClass {
 	String key[] = new String[5];
 	String data[] = new String[5];
 	
-	//　キー値とデータを格納する関数
+	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
 		//test
 		key[0]=keyString;
@@ -58,7 +58,7 @@ public class LRUCacheClass {
 		return "1";
 	}
 	
-	//　任意の配列にたいして、先頭から数えて初めにnullが格納されている番号を返す関数
+	//任意の配列にたいして、先頭から数えて初めにnullが格納されている番号を返す関数
 	private int checkNullNum(String array[]) {
 		int nullNum=0;
 		
@@ -73,4 +73,6 @@ public class LRUCacheClass {
 		
 		return nullNum;
 	}
+	
+
 }
