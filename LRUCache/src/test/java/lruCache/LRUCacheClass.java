@@ -42,9 +42,18 @@
 package lruCache;
 
 public class LRUCacheClass {
-	String key[] = new String[2];
-	String data[] = new String[2];
+	String key[] = new String[5];
+	String data[] = new String[5];
 	
-//	public void put
+	public void put(String keyString,String dataString) {
+		
+		//test
+		
+	}
+	
+	public String get(String keyString) {
+		
+		return "1";
+	}
 	
 }
