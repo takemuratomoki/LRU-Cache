@@ -60,7 +60,17 @@ public class LRUCacheClass {
 	
 	//　任意の配列にたいして、先頭から数えて初めにnullが格納されている番号を返す関数
 	private int checkNullNum(String array[]) {
+		int nullNum=0;
 		
-		return 1;
+		//配列の全要素に対して繰り返し
+		for(String s:array) {
+			if(s==null) {
+				break;
+			}else {
+				nullNum++;
+			}
+		}
+		
+		return nullNum;
 	}
 }
