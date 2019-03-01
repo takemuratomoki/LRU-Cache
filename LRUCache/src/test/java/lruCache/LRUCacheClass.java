@@ -58,4 +58,9 @@ public class LRUCacheClass {
 		return "1";
 	}
 	
+	//@”CˆÓ‚Ì”z—ñ‚É‚½‚¢‚µ‚ÄAæ“ª‚©‚ç”‚¦‚Ä‰‚ß‚Énull‚ªŠi”[‚³‚ê‚Ä‚¢‚é”Ô†‚ğ•Ô‚·ŠÖ”
+	public int checkNullNum(String array[]) {
+		
+		return 1;
+	}
 }
