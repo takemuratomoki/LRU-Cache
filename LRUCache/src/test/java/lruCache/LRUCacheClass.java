@@ -46,12 +46,14 @@ public class LRUCacheClass {
 	String key[] = new String[5];
 	String data[] = new String[5];
 	
+	//　キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
 		//test
 		key[0]=keyString;
 		data[0]=dataString;
 	}
 	
+	//　指定されたキー値に対応したデータを返す関数
 	public String get(String keyString) {
 		return "1";
 	}
