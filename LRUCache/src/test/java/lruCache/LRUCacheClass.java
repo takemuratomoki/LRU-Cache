@@ -74,5 +74,13 @@ public class LRUCacheClass {
 		return nullNum;
 	}
 	
-
+	//checkNullNum関数を外部クラスからテストするための関数1
+	public int testCNNForKey() {
+		return 	checkNullNum(key);
+	}
+	
+	//checkNullNum関数を外部クラスからテストするための関数2
+	public int testCNNForData() {
+		return checkNullNum(data);
+	}
 }
