@@ -152,7 +152,7 @@ public class LRUCacheClass {
 		data[0]="d1";
 		data[1]="d2";
 		data[2]="d3";
-		data[0]="d4";
+		data[3]="d4";
 		data[4]=null;
 	}
 }
