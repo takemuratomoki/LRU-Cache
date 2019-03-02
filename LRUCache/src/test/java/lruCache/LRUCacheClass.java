@@ -56,10 +56,10 @@ public class LRUCacheClass {
 		 * 3、要素が最大数保存されている時、先頭を消して詰め、最後をnullにする
 		 */
 		
-		//1の処理
+		//1の処理 keyの一致をみるのでkeyを変更するのが最後
 		if(checkSameNum(key,keyString)!=-1) {//キー値に一致する要素がある
+			data = deleteAndSort(checkSameNum(key,keyString),data);
 			key = deleteAndSort(checkSameNum(key,keyString),key);
-			data = deleteAndSort(checkSameNum(data,dataString),data);
 		}
 		
 		//保存実行（2の処理）
@@ -75,7 +75,22 @@ public class LRUCacheClass {
 	
 	//　指定されたキー値に対応したデータを返す関数
 	public String get(String keyString) {
-		return "1";
+		if(checkSameNum(key,keyString)==-1) {//一致するkey値がない
+			return null;
+		}else {
+			//dataの保存
+			String r =  data[checkSameNum(key,keyString)];
+			
+			//並べ替えの実行　keyの一致をみるのでkeyを変更するのが最後
+			data = deleteAndSort(checkSameNum(key,keyString),data);
+			key = deleteAndSort(checkSameNum(key,keyString),key);
+			
+			//nullの先頭に保存し直す
+			key[checkNullNum(key)]=keyString;
+			data[checkNullNum(data)]=r;
+			
+			return r;
+		}
 	}
 	
 	//任意の配列にたいして、先頭から数えて初めにnullが格納されている番号を返す関数
