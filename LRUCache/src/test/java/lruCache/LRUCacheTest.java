@@ -27,7 +27,9 @@ public class LRUCacheTest {
 		@Test
 		public void get関数で正しい値が返ってくるかのテスト() {
 			lru.testGetMethod();
+			lru.get("k1");
 			assertThat(lru.get("k1"), is("d1"));
+			System.out.print("testnow");
 		}
 		
 		//要素数が5の時のみ
@@ -107,6 +109,19 @@ public class LRUCacheTest {
 			assertThat(lru.data[4],nullValue());
 		}
 		
+		//要素数が5の時のみ
+		@Test
+		public void put関数の実行で要素が最大となる時任意の要素が取り出せるかのテスト() {
+			lru.put("k1", "d1");
+			lru.put("k2", "d2");
+			lru.put("k3", "d3");
+			lru.put("k4", "d4");
+			lru.put("k5", "d5");
+//			assertThat(lru.get("k3"),is("d3"));
+			lru.get("k3");
+			System.out.print("");
+		}
+
 	}
 	
 	public static class 配列要素チェック関係{

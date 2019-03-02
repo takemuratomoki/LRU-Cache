@@ -48,8 +48,8 @@
 package lruCache;
 
 public class LRUCacheClass {
-	String key[] = new String[5];
-	String data[] = new String[5];
+	public String key[] = new String[5];
+	public String data[] = new String[5];
 	
 	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
@@ -146,15 +146,27 @@ public class LRUCacheClass {
 	
 	//put関数を用いずにget関数をテストするための関数
 	public void testGetMethod() {
-		key[0]="k1";
-		key[1]="k2";
-		key[2]="k3";
-		key[3]="k4";
-		key[4]=null;
-		data[0]="d1";
-		data[1]="d2";
-		data[2]="d3";
-		data[3]="d4";
-		data[4]=null;
+		//key配列の初期化
+		for(int i = 0 ; i<key.length-1;i++) {
+			key[i]="k"+(i+1);
+		}
+		key[key.length-1]=null;
+		
+		//data配列の初期化
+		for(int j = 0 ; j<data.length-1;j++) {
+			data[j]="d"+(j+1);
+		}
+		data[data.length-1]=null;
+		
+//		key[0]="k1";
+//		key[1]="k2";
+//		key[2]="k3";
+//		key[3]="k4";
+//		key[4]=null;
+//		data[0]="d1";
+//		data[1]="d2";
+//		data[2]="d3";
+//		data[3]="d4";
+//		data[4]=null;
 	}
 }

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.hamcrest.CoreMatchers"/>
+<fullyQualifiedTypeName name="org.junit.experimental.runners.Enclosed"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 </qualifiedTypeNameHistroy>
