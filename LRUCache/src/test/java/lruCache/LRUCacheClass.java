@@ -159,16 +159,5 @@ public class LRUCacheClass {
 			data[j]="d"+(j+1);
 		}
 		data[data.length-1]=null;
-		
-//		key[0]="k1";
-//		key[1]="k2";
-//		key[2]="k3";
-//		key[3]="k4";
-//		key[4]=null;
-//		data[0]="d1";
-//		data[1]="d2";
-//		data[2]="d3";
-//		data[3]="d4";
-//		data[4]=null;
 	}
 }

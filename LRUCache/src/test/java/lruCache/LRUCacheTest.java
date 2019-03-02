@@ -29,7 +29,6 @@ public class LRUCacheTest {
 			lru.testGetMethod();
 			lru.get("k1");
 			assertThat(lru.get("k1"), is("d1"));
-			System.out.print("testnow");
 		}
 		
 		//要素数が5の時のみ
@@ -117,11 +116,8 @@ public class LRUCacheTest {
 			lru.put("k3", "d3");
 			lru.put("k4", "d4");
 			lru.put("k5", "d5");
-//			assertThat(lru.get("k3"),is("d3"));
-			lru.get("k3");
-			System.out.print("");
+			assertThat(lru.get("k3"),is("d3"));
 		}
-
 	}
 	
 	public static class 配列要素チェック関係{
