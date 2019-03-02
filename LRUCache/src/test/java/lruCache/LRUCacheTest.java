@@ -22,13 +22,32 @@ public class LRUCacheTest {
 			
 			lru = new LRUCacheClass();	
 		}
-
-		
 	}
 	
-//	public static class put関数関係{
-//		
-//	}
+	public static class put関数関係{
+		//テスト用宣言
+		private LRUCacheClass lru;
+		
+		@Before
+		public void 前準備() {
+			
+			lru = new LRUCacheClass();	
+		}
+		
+		@Test
+		public void _2つ要素を追加した時のkey配列のnullチェック() {
+			lru.put("hoge1", "hogehoge1");
+			lru.put("hoge2", "hogehoge2");
+			assertThat(lru.testCNNForKey(),is(2));
+		}
+		
+		@Test
+		public void _2つ要素を追加した時のdata配列のnullチェック() {
+			lru.put("hoge1", "hogehoge1");
+			lru.put("hoge2", "hogehoge2");
+			assertThat(lru.testCNNForData(),is(2));
+		}
+	}
 	
 	public static class 配列要素チェック関係{
 		
@@ -50,21 +69,7 @@ public class LRUCacheTest {
 		public void 何も格納していない時のdata配列のnullチェック() {
 			assertThat(lru.testCNNForData(),is(0));
 		}
-		
-		@Test
-		public void _2つ要素を追加した時のkey配列のnullチェック() {
-			lru.put("hoge1", "hogehoge1");
-			lru.put("hoge2", "hogehoge2");
-			assertThat(lru.testCNNForKey(),is(2));
-		}
-		
-		@Test
-		public void _2つ要素を追加した時のdata配列のnullチェック() {
-			lru.put("hoge1", "hogehoge1");
-			lru.put("hoge2", "hogehoge2");
-			assertThat(lru.testCNNForData(),is(2));
-		}
-		
+				
 		@Test
 		public void 配列の要素を削除し先頭に詰める関数テスト() {
 			String test[]= {"hoge","hogehoge","hogehogehoge"};

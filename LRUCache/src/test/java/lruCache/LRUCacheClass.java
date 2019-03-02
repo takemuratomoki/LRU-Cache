@@ -127,7 +127,7 @@ public class LRUCacheClass {
 		}
 		
 		//最後に配列の最後は必ずnullになる処理
-		array[array.length - 1]=null;
+		array[array.length - 1] = null;
 		
 		return array;
 	}
@@ -144,6 +144,15 @@ public class LRUCacheClass {
 	
 	//put関数を用いずにget関数をテストするための関数
 	public void testGetMethod() {
-		
+		key[0]="k1";
+		key[1]="k2";
+		key[2]="k3";
+		key[3]="k4";
+		key[4]=null;
+		data[0]="d1";
+		data[1]="d2";
+		data[2]="d3";
+		data[0]="d4";
+		data[4]=null;
 	}
 }
