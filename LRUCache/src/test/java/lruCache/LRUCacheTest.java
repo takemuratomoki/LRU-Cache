@@ -66,6 +66,9 @@ public class LRUCacheTest {
 			lru.put("hoge2", "hogehoge2");
 			assertThat(lru.testCNNForData(),is(2));
 		}
+
+		//
+		
 	}
 	
 	public static class 配列要素チェック関係{
