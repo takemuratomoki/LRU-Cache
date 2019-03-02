@@ -51,8 +51,26 @@ public class LRUCacheClass {
 	
 	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
+		/*1、キー値が一致する要素がある時それを消してそれ以外をソートする
+		 * 2、最も先頭のnullの場所にキー値とデータを格納
+		 * 3、要素が最大数保存されている時、先頭を消して詰め、最後をnullにする
+		 */
+		
+		//1の処理
+		if(checkSameNum(key,keyString)!=-1) {//キー値に一致する要素がある
+			key = deleteAndSort(checkSameNum(key,keyString),key);
+			data = deleteAndSort(checkSameNum(data,dataString),data);
+		}
+		
+		//保存実行（2の処理）
 		key[checkNullNum(key)]=keyString;
 		data[checkNullNum(data)]=dataString;
+		
+		//3の処理
+		if(key[key.length - 1]!=null) {
+			key=deleteAndSort(0,key);
+			data=deleteAndSort(0,data);
+		}
 	}
 	
 	//　指定されたキー値に対応したデータを返す関数
