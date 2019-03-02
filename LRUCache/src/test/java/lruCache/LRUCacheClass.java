@@ -88,7 +88,15 @@ public class LRUCacheClass {
 	}
 	
 	//指定された番の要素をnullにして、以降の要素を[n-1]に移す関数
-	
+	public String[] deleteAndSort(int delNum,String array[]) {
+		for(int i = delNum ; i < array.length -1  ; i++) {//仕様上配列の最後の要素は必ずnullなので要素の最大数-1だけ繰り返す
+			array[i]=array[i+1];
+		}
+		//最後に配列の最後は必ずnullになる処理
+		array[array.length - 1]=null;
+		
+		return array;
+	}
 	
 	//checkNullNum関数を外部クラスからテストするための関数1
 	public int testCNNForKey() {

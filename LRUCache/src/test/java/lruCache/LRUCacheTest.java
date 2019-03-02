@@ -38,15 +38,8 @@ public class LRUCacheTest {
 		assertThat(lru.testCNNForData(),is(2));
 	}
 	
-	//引数として指定されたStringに、配列の中で一致する要素を検出する関数テスト
 	@Test
-	public void 同一要素の番号を返すテスト() {
-		String test[]= {"hoge","hogehoge","hogehogehoge"};
-		assertThat(lru.checkSameNum(test, "hogehoge"), is(1));
-	}
-	@Test
-	public void 同一要素がないときー1を返すテスト(){
-		String test[]= {"hoge","hogehoge","hogehogehoge"};
-		assertThat(lru.checkSameNum(test, "hog"), is(-1));
+	public void 配列の要素を削除し先頭に詰める関数テスト() {
+		
 	}
 }
