@@ -24,10 +24,6 @@ public class LRUCacheTest {
 		}
 
 		
-		@Test
-		public void •¶š—ñ1‚ğ•Ô‚·getŠÖ”ƒeƒXƒg() {
-			assertThat(lru.get("hoge1"),is("1"));
-		}
 	}
 	
 //	public static class putŠÖ”ŠÖŒW{

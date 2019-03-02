@@ -141,4 +141,9 @@ public class LRUCacheClass {
 	public int testCNNForData() {
 		return checkNullNum(data);
 	}
+	
+	//pull関数を用いずにget関数をテストするための関数
+	public void testGetMethod() {
+		
+	}
 }
