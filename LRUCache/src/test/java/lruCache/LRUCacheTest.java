@@ -22,6 +22,25 @@ public class LRUCacheTest {
 			
 			lru = new LRUCacheClass();	
 		}
+		
+		@Test
+		public void get関数で正しい値が返ってくるかのテスト() {
+			lru.testGetMethod();
+			assertThat(lru.get("k1"), is("d1"));
+		}
+		
+		@Test
+		public void 保存されていないkey値が引数に入れられた時nullが返ってくるかのテスト() {
+			lru.testGetMethod();
+			assertThat(lru.get("testes"),nullValue());
+		}
+		
+		@Test
+		public void get関数で一度呼び出した値が最後尾に移動しているかテスト() {
+			lru.testGetMethod();
+			lru.get("k1");
+			assertThat(lru.data[3],is("d1"));
+		}
 	}
 	
 	public static class put関数関係{
