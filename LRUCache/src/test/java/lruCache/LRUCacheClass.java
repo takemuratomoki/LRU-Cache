@@ -142,7 +142,7 @@ public class LRUCacheClass {
 		return checkNullNum(data);
 	}
 	
-	//pull関数を用いずにget関数をテストするための関数
+	//put関数を用いずにget関数をテストするための関数
 	public void testGetMethod() {
 		
 	}
