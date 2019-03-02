@@ -115,8 +115,10 @@ public class LRUCacheClass {
 	private int checkSameNum(String array[],String s) {
 		int sameNum=-1;
 		for (int i = 0; i < array.length;i++) {
-			if(array[i]==s) {
-				sameNum=i;
+			if(array[i]!=null) {//null‰ñ”ð
+				if(array[i].equals(s)) {
+					sameNum=i;
+				}
 			}
 		}
 		return sameNum;
