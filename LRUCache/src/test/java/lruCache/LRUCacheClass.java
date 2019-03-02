@@ -92,6 +92,7 @@ public class LRUCacheClass {
 		for(int i = delNum ; i < array.length -1  ; i++) {//仕様上配列の最後の要素は必ずnullなので要素の最大数-1だけ繰り返す
 			array[i]=array[i+1];
 		}
+		
 		//最後に配列の最後は必ずnullになる処理
 		array[array.length - 1]=null;
 		

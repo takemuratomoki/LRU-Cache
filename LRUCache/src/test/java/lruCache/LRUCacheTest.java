@@ -40,6 +40,8 @@ public class LRUCacheTest {
 	
 	@Test
 	public void 配列の要素を削除し先頭に詰める関数テスト() {
-		
+		String test[]= {"hoge","hogehoge","hogehogehoge"};
+		test = lru.deleteAndSort(1, test);
+		assertThat(test[1],is("hogehogehoge"));
 	}
 }
