@@ -45,7 +45,7 @@
  * [ ] ”z—ñ‚Ì—v‘f”‚ğn‚É•ÏX
  */
 
-package lruCashe;
+package lruCache;
 
 public class LRUCacheClass {
 
