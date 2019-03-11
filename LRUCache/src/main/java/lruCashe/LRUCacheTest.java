@@ -1,4 +1,4 @@
-package lruCache;
+package lruCashe;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -6,7 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
-import lruCache.LRUCacheClass;
+
+import lruCashe.LRUCacheClass;
 
 @RunWith(Enclosed.class)
 public class LRUCacheTest {
@@ -20,7 +21,7 @@ public class LRUCacheTest {
 		@Before
 		public void 前準備() {
 			
-			lru = new LRUCacheClass();	
+			lru = new LRUCacheClass(5);	
 		}
 		
 		//要素数が5の時のみ
@@ -54,7 +55,7 @@ public class LRUCacheTest {
 		@Before
 		public void 前準備() {
 			
-			lru = new LRUCacheClass();	
+			lru = new LRUCacheClass(5);	
 		}
 		
 		@Test
@@ -128,7 +129,7 @@ public class LRUCacheTest {
 		@Before
 		public void 前準備() {
 			
-			lru = new LRUCacheClass();	
+			lru = new LRUCacheClass(5);	
 		}
 		
 		@Test

@@ -45,12 +45,19 @@
  * [ ] 配列の要素数をnに変更
  */
 
-package lruCache;
+package lruCashe;
 
 public class LRUCacheClass {
+	
 
-	public String key[] = new String[5];
-	public String data[] = new String[5];
+	public String key[];
+	public String data[];
+	
+	public LRUCacheClass(int ca) {
+		key = new String[ca];
+		data = new String[ca];
+	}
+
 
 	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
