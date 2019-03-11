@@ -6,6 +6,6 @@ package lruCashe;
 public class App {
 
 	public static void main(String[] args) {
-		System.out.println("hhh");
+		LRUCacheClass lru = new LRUCacheClass();
     }
 }

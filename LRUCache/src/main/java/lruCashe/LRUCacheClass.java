@@ -48,9 +48,10 @@
 package lruCashe;
 
 public class LRUCacheClass {
+
 	public String key[] = new String[5];
 	public String data[] = new String[5];
-	
+
 	//キー値とデータを格納する関数
 	public void put(String keyString,String dataString) {
 		/*1、キー値が一致する要素がある時それを消してそれ以外をソートする
