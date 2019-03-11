@@ -45,7 +45,7 @@
  * [ ] ”z—ñ‚Ì—v‘f”‚ğn‚É•ÏX
  */
 
-package lruCache;
+package lruCashe;
 
 public class LRUCacheClass {
 	public String key[] = new String[5];

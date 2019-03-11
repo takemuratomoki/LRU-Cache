@@ -6,7 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
-import lruCache.LRUCacheClass;
+
+import lruCashe.LRUCacheClass;
 
 @RunWith(Enclosed.class)
 public class LRUCacheTest {
